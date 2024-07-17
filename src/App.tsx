@@ -224,14 +224,15 @@ const App: React.FC = () => {
           onCancel={handleCancelModal}
         >
           <Form form={form} layout="vertical" name="personForm">
-            <Form.Item name="name" label="Nome" rules={[{ required: true, message: "Por favor coloque o nome" }]}>
+            <Form.Item name="name" label="Nome" rules={[{ required: true, message: "Por favor coloque o nome"}
+            , { pattern: /^[a-zA-Z\s]+$/, message: "O nome só pode conter letras e espaços" }]}>
               <Input />
             </Form.Item>
-            <Form.Item name="email" label="Email" rules={[{ required: true, type: "email", message: "Por favor coloque um email válido" }]}>
+            <Form.Item name="email" label="Email" rules={[{ required: true, type: "email", message: "Por favor coloque um email válido"}]}>
               <Input />
             </Form.Item>
-            <Form.Item name="phoneNumber" label="Telefone" rules={[{ required: true, message: "Por favor coloque o número de telefone", min: 19 }]}>
-              <MaskedInput maskChar={null} mask="+99 (99) 99999-9999" />
+            <Form.Item name="phoneNumber" label="Telefone" rules={[{ required: true, message: "Por favor coloque o número de telefone", min: 15, max: 15 }]}>
+              <MaskedInput maskChar={null} mask="(99) 99999-9999" />
             </Form.Item>
             <Form.Item name="birthDate" label="Data de nascimento" rules={[{ required: true, message: "Por favor selecione uma data de nascimento" }]}>
               <DatePicker format="DD-MM-YYYY" />
