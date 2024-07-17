@@ -1,6 +1,6 @@
 # Person (Frontend)
 
-Este é um projeto desenvolvido para criação de pessoas com o CRUD (Create, Read, Update, Delete).
+Este é um projeto desenvolvido para criação de pessoas contendo listagem, criação, edição, exclusão, paginação e filtro.
 
 ## Tecnologias/Framework
 <b>Desenvolvido ultilizando:</b>
