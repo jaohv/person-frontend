@@ -224,8 +224,8 @@ const App: React.FC = () => {
           onCancel={handleCancelModal}
         >
           <Form form={form} layout="vertical" name="personForm">
-            <Form.Item name="name" label="Nome" rules={[{ required: true, message: "Por favor coloque o nome"}
-            , { pattern: /^[a-zA-Z\s]+$/, message: "O nome só pode conter letras e espaços" }]}>
+            <Form.Item name="name" label="Nome" rules={[{ required: true, message: "Por favor coloque o nome"}, 
+            { pattern: /^[a-zA-Z\s]+$/, message: "O nome só pode conter letras e espaços" }]}>
               <Input />
             </Form.Item>
             <Form.Item name="email" label="Email" rules={[{ required: true, type: "email", message: "Por favor coloque um email válido"}]}>
